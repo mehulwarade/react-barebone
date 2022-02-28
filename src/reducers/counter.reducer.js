@@ -5,6 +5,7 @@ const initialState = 0; // by default not logged in
 const counterReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case 'INCREMENT':
+			console.log(state)
 			// do something when increment action is called;
 			return state + action.param;
 
